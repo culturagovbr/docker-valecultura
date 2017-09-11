@@ -20,12 +20,12 @@ This code `-t culturagovbr/valecultura-web:1.0` means you will create a image na
 
 You can execute the command below to create a new container using this new image created. Note: `$(pwd)` means your current directory. You can also change it, if you want.
 ```
- docker run -it -v $(pwd)portal-vale-cultura/public:/var/www -v $(pwd)/log/apache2:/var/log/apache2 --name valecultura-webv1.0 -e APPLICATION_ENV="development" -p 80:80 -p 9000:9000 -p 8888:8888 culturagovbr/valecultura-web:latest
+ docker run -it -v $(pwd)portal-vale-cultura:/var/www -v $(pwd)/log/apache2:/var/log/apache2 --name valecultura-webv1.0 -e APPLICATION_ENV="development" -p 80:80 -p 9000:9000 -p 8888:8888 culturagovbr/valecultura-web:latest
 ```
 
 For development purposes
 ```
- docker run -it -v $(pwd)portal-vale-cultura/public:/var/www --name valecultura-webv1.0 -e APPLICATION_ENV="development" -p 80:80 culturagovbr/valecultura-web:latest
+ docker run -it -v $(pwd)portal-vale-cultura:/var/www --name valecultura-webv1.0 -e APPLICATION_ENV="development" -p 80:80 culturagovbr/valecultura-web:latest
 ```
 
 Or You you can also execute the same command above, but arranging using docker-compose:
