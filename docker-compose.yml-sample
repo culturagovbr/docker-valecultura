@@ -1,0 +1,14 @@
+version: '2'
+services:
+  web:
+    build: .
+    image: culturagovbr/valecultura:1.0
+    container_name: vale-dashboardv1
+    ports:
+      - "81:80"
+    volumes:
+      - ./app:/var/www
+      - /var/log/apache2:/var/log/apache2
+    environment:
+      - APPLICATION_ENV="homologacao"
+      - GIT_REPOSITORY=https://github.com/culturagovbr/portal-vale.cultura.git

@@ -27,10 +27,13 @@ RUN docker-php-ext-configure pdo_dblib --with-libdir=/lib/x86_64-linux-gnu && do
 RUN chmod +x -R /tmp/src/
 
 EXPOSE 80
-EXPOSE 8888
-EXPOSE 9000
+#EXPOSE 8888
+#EXPOSE 9000
 
 WORKDIR /var/www/
+
+COPY docker-entrypoint.sh /usr/local/bin/
+ENTRYPOINT ["docker-entrypoint.sh"]
 
 RUN echo "[ ***** ***** ***** ] - Begin of Actions inside Image ***** ***** ***** "
 CMD /tmp/src/actions/start.sh
