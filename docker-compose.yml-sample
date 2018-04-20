@@ -3,7 +3,7 @@ services:
   web:
     build: .
     image: culturagovbr/valecultura:1.0
-    container_name: vale-dashboardv1
+    container_name: portal-valecultura
     ports:
       - "81:80"
     volumes:
