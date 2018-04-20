@@ -1,3 +1,4 @@
+#!/bin/bash
 
 echo "[******] Copying and enable virtualhost 'site.conf'";
 cp /tmp/src/actions/apache2/sites-available/site.conf /etc/apache2/sites-available/site.conf

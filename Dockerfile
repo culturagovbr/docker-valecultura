@@ -24,7 +24,7 @@ RUN docker-php-ext-configure mssql --with-libdir=/lib/x86_64-linux-gnu && docker
 RUN docker-php-ext-configure pdo_dblib --with-libdir=/lib/x86_64-linux-gnu && docker-php-ext-install pdo_dblib
 
 
-RUN chmod +x -R /tmp/src/
+RUN chmod 777 -R /tmp/src/
 
 EXPOSE 80
 #EXPOSE 8888
@@ -33,6 +33,10 @@ EXPOSE 80
 WORKDIR /var/www/
 
 COPY docker-entrypoint.sh /usr/local/bin/
+
+RUN chmod 777 /usr/local/bin/docker-entrypoint.sh \
+    && ln -s /usr/local/bin/docker-entrypoint.sh /
+
 ENTRYPOINT ["docker-entrypoint.sh"]
 
 RUN echo "[ ***** ***** ***** ] - Begin of Actions inside Image ***** ***** ***** "

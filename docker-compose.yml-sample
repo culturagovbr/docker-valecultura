@@ -10,5 +10,5 @@ services:
       - ./app:/var/www
       - /var/log/apache2:/var/log/apache2
     environment:
-      - APPLICATION_ENV="homologacao"
-      - GIT_REPOSITORY=https://github.com/culturagovbr/portal-vale.cultura.git
+      - APPLICATION_ENV=homologacao
+      - GIT_REPOSITORY=https://github.com/culturagovbr/portal-vale-cultura.git
