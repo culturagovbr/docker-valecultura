@@ -15,6 +15,9 @@ if ! [ -d "/var/www/portal-vale-cultura" ] || ! [ -d "/var/www/portal-vale-cultu
     cp /var/www/portal-vale-cultura/projeto/application/configs/application.ini-example /var/www/portal-vale-cultura/projeto/application/configs/application.ini
     cp /var/www/portal-vale-cultura/projeto/application/configs/db.ini-example /var/www/portal-vale-cultura/projeto/application/configs/db.ini
 
+    echo "SetEnv APPLICATION_ENV $APPLICATION_ENV" > /var/www/portal-vale-cultura/public/.htaccess
+    cat /var/www/portal-vale-cultura/public/.htaccess-example >> /var/www/portal-vale-cultura/public/.htaccess
+    
     echo "[ ****************** ] Changing owner and group from the Project to 'www-data' "
     chown www-data:www-data -R /var/www/portal-vale-cultura
     
