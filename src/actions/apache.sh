@@ -25,9 +25,7 @@ a2enmod rewrite
 echo "[******] Enable Apache Mod Headers";
 a2enmod headers
 
-echo "[******] Restarting Apache 2 Service";
-service apache2 reload
-
 echo "[******] Starts Apache using Foreground Mode";
 apache2ctl -D FOREGROUND
 #exec apache2 -DFOREGROUND
+
