@@ -18,8 +18,13 @@ if ! [ -d "/var/www/portal-vale-cultura" ] || ! [ -d "/var/www/portal-vale-cultu
     echo "SetEnv APPLICATION_ENV $APPLICATION_ENV" > /var/www/portal-vale-cultura/public/.htaccess
     cat /var/www/portal-vale-cultura/public/.htaccess-example >> /var/www/portal-vale-cultura/public/.htaccess
     
+    mkdir -p /var/www/portal-vale-cultura/public/imagens/captcha
+    chmod 755 /var/www/portal-vale-cultura/public/imagens
+    chmod 775 /var/www/portal-vale-cultura/public/imagens/captcha
+    
     echo "[ ****************** ] Changing owner and group from the Project to 'www-data' "
     chown www-data:www-data -R /var/www/portal-vale-cultura
+    
     
     ls -la /var/www/portal-vale-cultura
 fi
