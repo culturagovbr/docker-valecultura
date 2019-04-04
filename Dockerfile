@@ -1,4 +1,4 @@
-FROM php:5.6.30-apache
+FROM php:5.6.40-apache
 
 VOLUME ["/var/www", "/var/log/apache2", "/etc/apache2"]
 

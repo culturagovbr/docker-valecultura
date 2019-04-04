@@ -5,7 +5,7 @@ services:
     image: culturagovbr/valecultura:1.0
     container_name: portal-valecultura
     ports:
-      - "81:80"
+      - "80:80"
     volumes:
       - ./app:/var/www
       - /var/log/apache2:/var/log/apache2
