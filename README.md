@@ -2,7 +2,7 @@
 
 ## Pré requisitos
 * Docker - Mais informações [aqui](http://pt.slideshare.net/vinnyfs89/docker-essa-baleia-vai-te-conquistar?qid=aed7b752-f313-4515-badd-f3bf811c8a35&v=&b=&from_search=1).
-* docker-compose - Mais informações [aqui] (https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=2ahUKEwiKr87u07bhAhWxHbkGHXZdBeYQFjAAegQIBBAB&url=https%3A%2F%2Fdocs.docker.com%2Fcompose%2F&usg=AOvVaw02oes91geDSZ-H__u_XMxc).
+* docker-compose - Mais informações [aqui](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=2ahUKEwiKr87u07bhAhWxHbkGHXZdBeYQFjAAegQIBBAB&url=https%3A%2F%2Fdocs.docker.com%2Fcompose%2F&usg=AOvVaw02oes91geDSZ-H__u_XMxc).
 
 ## Subindo a aplicação via docker-compose (recomendado para desenvolvimento)
 
